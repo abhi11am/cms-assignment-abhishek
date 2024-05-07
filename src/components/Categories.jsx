@@ -1,8 +1,8 @@
 import React from "react";
-import useNewsController from "../controllers/useNewsController";
+import useNewsHomeController from "../controllers/useNewsHomeController";
 
 const Categories = () => {
-  const { categories } = useNewsController();
+  const { categories } = useNewsHomeController();
   return (
     <div className="flex items-center overflow-auto no-scrollbar space-x-6 p-4 md:px-0">
       {categories?.map((item, index) => (

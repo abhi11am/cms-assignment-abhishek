@@ -12,7 +12,7 @@ const useNewsSummaryController = () => {
   useEffect(() => {
     if (type && id) dispatch(setNewsSummary({ type, id }));
     return () => {
-      console.log('going back');
+      dispatch(unsetNewsSummary());
     }
   }, [type, id]);
 

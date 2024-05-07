@@ -6,7 +6,7 @@ import BreakingNews from "./BreakingNews";
 
 const Home = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-10">
       <Categories />
       <div className="grid grid-cols-1 md:grid-cols-6 gap-x-4 lg:gap-x-6 gap-y-10">
         <div className="md:col-span-4 space-y-10">

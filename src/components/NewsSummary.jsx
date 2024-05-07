@@ -27,7 +27,7 @@ const NewsSummary = () => {
         <img
           src={newsSummary.coverImage}
           alt="news cover"
-          className="w-full h-72 max-w-full object-cover"
+          className="w-full h-72 lg:h-96 max-w-full object-cover"
         />
         <div className="absolute bottom-0 w-full p-4 pt-24 z-10 bg-gradient-to-t from-gray-950">
           <div className="text-xs text-white mb-2 truncate">
@@ -47,7 +47,7 @@ const NewsSummary = () => {
         </div>
       </div>
       <div
-        className="news-summary w-full relative bg-white p-4 rounded-t-xl -translate-y-4 z-20"
+        className="news-summary w-full relative bg-white p-4 rounded-xl -translate-y-4 z-20"
         dangerouslySetInnerHTML={{ __html: newsSummary.summary }}
       ></div>
     </div>

@@ -7,14 +7,14 @@ const TrendingNewsCard = ({ item, onClick }) => {
       className="group flex items-center space-x-4 cursor-pointer"
       onClick={onClick}
     >
-      <div className="w-full max-w-24">
+      <div className="w-24">
         <img
           src={item.coverImage}
           alt="news cover"
           className="w-24 h-24 object-cover  rounded-xl"
         />
       </div>
-      <div className="w-3/4">
+      <div className="w-[calc(100%-7rem)]">
         <div className="text-xs text-gray-800 mb-2 truncate">
           {item.category}
         </div>
@@ -28,22 +28,5 @@ const TrendingNewsCard = ({ item, onClick }) => {
     </div>
   );
 };
-
-/*
-<a href="#" className="">
-  <div className="rounded-xl mb-2 overflow-hidden">
-    <img
-      src={item.coverImage}
-      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
-    />
-  </div>
-  <div className="flex items-center mb-1">
-    <div className="text-xs text-gray-500">{item.category}</div>
-  </div>
-  <p className="text-sm font-bold line-clamp-2 text-gray-800">
-    {item.title}
-  </p>
-</a>
-*/
 
 export default TrendingNewsCard;

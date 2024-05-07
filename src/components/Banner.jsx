@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { ArrowTrendingUpIcon, CalendarIcon } from "@heroicons/react/20/solid";
 import moment from "moment";
 import NewsMetaData from "./NewsMetaData";
-import useNewsController from "../controllers/useNewsController";
+import useNewsHomeController from "../controllers/useNewsHomeController";
 
 const settings = {
   className: "center",
@@ -31,7 +31,7 @@ const settings = {
 };
 
 const Banner = () => {
-  const { banners, onNewsClick } = useNewsController();
+  const { banners, onNewsClick } = useNewsHomeController();
   return (
     <Slider {...settings}>
       {banners?.map((item) => (

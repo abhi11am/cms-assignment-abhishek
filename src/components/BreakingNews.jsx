@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "./Heading";
 import NewsCard from "./NewsCard";
-import useNewsController from "../controllers/useNewsController";
+import useNewsHomeController from "../controllers/useNewsHomeController";
 
 const BreakingNews = () => {
-  const { breakingNews, onNewsClick } = useNewsController();
+  const { breakingNews, onNewsClick } = useNewsHomeController();
   return (
     <div className="space-y-4 px-4 md:px-0">
       <Heading>Breaking News</Heading>
